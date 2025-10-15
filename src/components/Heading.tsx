@@ -1,12 +1,7 @@
-import { Heading } from './components/Heading';
-import './styles/global.css';
-import './styles/theme.css';
-
-export function App() {
-  console.log('Aprendendo React com Vite e TypeScript');
+export function Heading() {
   return (
     <>
-      <Heading />
+      <h1>Hello World !</h1>
       <p>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem cupiditate
         quasi ut quod natus ab quisquam voluptatibus facilis, odio accusamus
