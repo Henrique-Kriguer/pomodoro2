@@ -1,13 +1,9 @@
-export function Heading() {
+import styles from './Heading.module.css';
+
+export function Heading(props) {
   return (
     <>
-      <h1>Hello World !</h1>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem cupiditate
-        quasi ut quod natus ab quisquam voluptatibus facilis, odio accusamus
-        dignissimos asperiores maiores suscipit nostrum, quidem earum ratione,
-        enim eos.
-      </p>
+      <h1 className={styles.heading}>{props.children}</h1>
     </>
   );
 }

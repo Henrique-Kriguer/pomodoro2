@@ -3,16 +3,9 @@ import './styles/global.css';
 import './styles/theme.css';
 
 export function App() {
-  console.log('Aprendendo React com Vite e TypeScript');
   return (
     <>
-      <Heading />
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem cupiditate
-        quasi ut quod natus ab quisquam voluptatibus facilis, odio accusamus
-        dignissimos asperiores maiores suscipit nostrum, quidem earum ratione,
-        enim eos.
-      </p>
+      <Heading></Heading>
     </>
   );
 }
