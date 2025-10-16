@@ -1,29 +1,26 @@
+import { Container } from './components/Container';
 import './styles/global.css';
 import './styles/theme.css';
+import { Heading } from './components/Heading';
 
 export function App() {
   return (
     <>
-      <div className='container'>
-        <div className='content'>
-          <section>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae
-            iste doloremque amet unde tempore distinctio exercitationem culpa,
-            omnis sint quis nesciunt? Quisquam, libero quos eum dicta aspernatur
-            ea ratione saepe.
-          </section>
-        </div>
-      </div>
-      <div className='container-fluid'>
-        <div className='content'>
-          <section>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae
-            iste doloremque amet unde tempore distinctio exercitationem culpa,
-            omnis sint quis nesciunt? Quisquam, libero quos eum dicta aspernatur
-            ea ratione saepe.
-          </section>
-        </div>
-      </div>
+      <Container>
+        <Heading>LOGO</Heading>
+      </Container>
+      <Container>
+        <Heading>MENU</Heading>
+      </Container>
+      <Container>
+        <Heading>CLOCK</Heading>
+      </Container>
+      <Container>
+        <Heading>FORM</Heading>
+      </Container>
+      <Container>
+        <Heading>FOOTER</Heading>
+      </Container>
     </>
   );
 }
