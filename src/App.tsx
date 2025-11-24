@@ -4,16 +4,28 @@ import { CountDown } from './components/CountDown';
 import { Cycles } from './components/Cycles';
 import { DefaultButton } from './components/DefaultButton';
 import { DefaultInput } from './components/DefaultInput';
-import { Heading } from './components/Heading';
 import { Logo } from './components/Logo';
 import { Menu } from './components/Menu';
 import './styles/global.css';
 import './styles/theme.css';
 import { Footer } from './components/Footer';
+import { Heading } from './components/Heading';
 
 export function App() {
+  let numero = 0;
+  function handleClick() {
+    const span = document.getElementById('numero');
+    if (!span) return;
+    numero += 1;
+    span.innerText = numero.toString();
+    console.log(numero);
+  }
   return (
     <>
+      <Heading>
+        <span id='numero'>Número : {numero}</span>
+      </Heading>
+      <button onClick={handleClick}>Aumentar</button>
       <Container>
         <Logo />
       </Container>
@@ -27,7 +39,7 @@ export function App() {
         <form className='form' action=''>
           <div className='formRow'>
             <DefaultInput
-              labelText='Task'
+              labelText={numero.toString()}
               id='text'
               type='text'
               placeholder='Digite sua tarefa'
